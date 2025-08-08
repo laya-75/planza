@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home Page - Grid Cards</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      text-align: center;
+      padding: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px 10px 0 0;
+    }
+
+    .card h3 {
+      margin: 15px 0 10px;
+      color: #6a1b9a;
+    }
+
+    .card p {
+      color: #555;
+      font-size: 14px;
+    }
+    .background {
+      background-image: url('../images.photo2.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 32px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1 style="text-align:center; color:#6a1b9a;">Our Services</h1>
+    <div class="grid">
+      <div class="card">
+        <img src="wedding.jpg" alt="Wedding">
+        <h3>Wedding Planning</h3>
+        <p>From venue to vows, we create unforgettable wedding experiences tailored to your vision.</p>
+      </div>
+      <div class="card">
+        <img src="corporate.jpg" alt="Corporate Event">
+        <h3>Corporate Events</h3>
+        <p>Professional event solutions for meetings, launches, and conferences with perfect execution.</p>
+      </div>
+      <div class="card">
+        <img src="birthday.jpg" alt="Birthday Party">
+        <h3>Birthday Parties</h3>
+        <p>Creative, fun, and memorable birthday celebrations for all ages and themes.</p>
+      </div>
+      <div class="card">
+        <img src="decor.jpg" alt="Decor Services">
+        <h3>Event Decor</h3>
+        <p>Stylish and customized decorations that set the mood and elevate the experience.</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+after form contauner
+ label {
+        display: block;
+        margin-top: 10px;
+        font-weight: bold;\
